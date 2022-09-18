@@ -118,16 +118,13 @@ class _home_pageState extends State<home_page> {
             );
           },
         ),
-        Padding(
-          padding: EdgeInsets.only(top: dima.width7, bottom: dima.width7),
-          child: Text(
-            "Choose Your City",
-            style: TextStyle(
-                color: Colors.black,
-                fontSize: 20,
-                fontStyle: FontStyle.italic,
-                fontWeight: FontWeight.w700),
-          ),
+        Text(
+          "Choose Your City",
+          style: TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+              fontStyle: FontStyle.italic,
+              fontWeight: FontWeight.w700),
         ),
         Container(
           // color: Colors.amber, //deepPurple,
@@ -158,15 +155,6 @@ class _home_pageState extends State<home_page> {
                       "Sulaymaniyah",
                     )),
                 ElevatedButton(
-                    onPressed: () {
-                      if (duhok != null) {
-                        setState(() {
-                          city = duhok;
-                        });
-                      }
-                    },
-                    child: Text("Duhok")),
-                ElevatedButton(
                   onPressed: () {
                     if (Halabja != null) {
                       setState(() {
@@ -175,6 +163,16 @@ class _home_pageState extends State<home_page> {
                     }
                   },
                   child: Text("Halabja"),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    if (duhok != null) {
+                      setState(() {
+                        city = Halabja;
+                      });
+                    }
+                  },
+                  child: Text("Duhok"),
                 ),
               ],
             ),

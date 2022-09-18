@@ -1,5 +1,5 @@
-import 'package:app_weather_kurdistan/screen/Map.dart';
 import 'package:app_weather_kurdistan/screen/home.dart';
+import 'package:app_weather_kurdistan/screen/map.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
@@ -28,10 +28,8 @@ class _myappState extends State<myapp> {
   Widget build(BuildContext context) {
     final List<Widget> _page = [
       home_page(),
-      Expanded(
-          child: SingleChildScrollView(
-        child: MapSample(),
-      ))
+      Homee()
+
       //account(),
     ];
 
@@ -47,7 +45,7 @@ class _myappState extends State<myapp> {
                   label: "Home",
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.location_city),
+                  icon: Icon(Icons.map_sharp),
                   label: "Map",
                 ),
               ]),
