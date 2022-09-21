@@ -19,7 +19,8 @@ Widget bottom(
     String four_des_1,
     String four_des_2,
     String four_des_3) {
-  TextStyle da = TextStyle(fontWeight: FontWeight.w500);
+  TextStyle da =
+      TextStyle(fontWeight: FontWeight.w500, overflow: TextOverflow.clip);
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
@@ -33,8 +34,6 @@ Widget bottom(
           ),
         ),
         child: Column(
-          //crossAxisAlignment: CrossAxisAlignment.start,
-          //  mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Center(
                 child: Padding(
@@ -48,9 +47,6 @@ Widget bottom(
               ),
             )),
             Row(
-              //      crossAxisAlignment: CrossAxisAlignment.baseline,
-              //    crossAxisAlignment: CrossAxisAlignment.stretch,
-
               crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -106,15 +102,11 @@ Widget bottom(
               thickness: 2,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Des",
-                  style: da,
-                ),
-                Text(
                   "$four_des",
-                  style: da,
+                  style: TextStyle(overflow: TextOverflow.clip),
                 )
               ],
             ),
@@ -131,8 +123,6 @@ Widget bottom(
           ),
         ),
         child: Column(
-          //crossAxisAlignment: CrossAxisAlignment.start,
-          //  mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Center(
                 child: Padding(
@@ -147,9 +137,6 @@ Widget bottom(
               ),
             )),
             Row(
-              //      crossAxisAlignment: CrossAxisAlignment.baseline,
-              //    crossAxisAlignment: CrossAxisAlignment.stretch,
-
               crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -205,12 +192,8 @@ Widget bottom(
               thickness: 2,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "Des",
-                  style: da,
-                ),
                 Text(
                   "$four_des_1",
                   style: da,
@@ -230,8 +213,6 @@ Widget bottom(
           ),
         ),
         child: Column(
-          //crossAxisAlignment: CrossAxisAlignment.start,
-          //  mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Center(
                 child: Padding(
@@ -246,9 +227,6 @@ Widget bottom(
               ),
             )),
             Row(
-              //      crossAxisAlignment: CrossAxisAlignment.baseline,
-              //    crossAxisAlignment: CrossAxisAlignment.stretch,
-
               crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -304,12 +282,8 @@ Widget bottom(
               thickness: 2,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "Des",
-                  style: da,
-                ),
                 Text(
                   "$four_des_2",
                   style: da,
@@ -329,8 +303,6 @@ Widget bottom(
           ),
         ),
         child: Column(
-          //crossAxisAlignment: CrossAxisAlignment.start,
-          //  mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Center(
                 child: Padding(
@@ -345,9 +317,6 @@ Widget bottom(
               ),
             )),
             Row(
-              //      crossAxisAlignment: CrossAxisAlignment.baseline,
-              //    crossAxisAlignment: CrossAxisAlignment.stretch,
-
               crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -403,12 +372,8 @@ Widget bottom(
               thickness: 2,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "Des",
-                  style: da,
-                ),
                 Text(
                   "$four_des_3",
                   style: da,

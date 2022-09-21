@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:app_weather_kurdistan/mod/four_days_f.dart';
 import 'package:app_weather_kurdistan/mod/mod_today.dart';
 import 'package:app_weather_kurdistan/mod/service.dart';
@@ -94,19 +96,19 @@ class _home_pageState extends State<home_page> {
               child: Column(
                 children: [
                   bottom(
-                      "${date2!.temp_four}",
+                      "${date2!.temp_four}\u2103",
                       "${date2!.des_four}",
-                      "${date2!.temp_four_min}",
-                      "${date2!.temp_four_max}",
-                      "${date2!.temp_1}",
-                      "${date2!.temp_2}",
-                      "${date2!.temp_3}",
-                      "${date2!.temp_four_min_1}",
-                      "${date2!.temp_four_min_2}",
-                      "${date2!.temp_four_min_3}",
-                      "${date2!.temp_four_max_1}",
-                      "${date2!.temp_four_max_2}",
-                      "${date2!.temp_four_max_3}",
+                      "${date2!.temp_four_min}\u2103",
+                      "${date2!.temp_four_max}\u2103",
+                      "${date2!.temp_1}\u2103",
+                      "${date2!.temp_2}\u2103",
+                      "${date2!.temp_3}\u2103",
+                      "${date2!.temp_four_min_1}\u2103",
+                      "${date2!.temp_four_min_2}\u2103",
+                      "${date2!.temp_four_min_3}\u2103",
+                      "${date2!.temp_four_max_1}\u2103",
+                      "${date2!.temp_four_max_2}\u2103",
+                      "${date2!.temp_four_max_3}\u2103",
                       "${date2!.des_four_1}",
                       "${date2!.des_four_2}",
                       "${date2!.des_four_3}")
@@ -118,6 +120,9 @@ class _home_pageState extends State<home_page> {
             );
           },
         ),
+        SizedBox(
+          height: dima.height29,
+        ),
         Text(
           "Choose Your City",
           style: TextStyle(
@@ -125,6 +130,9 @@ class _home_pageState extends State<home_page> {
               fontSize: 20,
               fontStyle: FontStyle.italic,
               fontWeight: FontWeight.w700),
+        ),
+        SizedBox(
+          height: dima.height29,
         ),
         Container(
           // color: Colors.amber, //deepPurple,

@@ -47,23 +47,23 @@ class fore_days {
     temp_four = json["list"][0]["main"]["temp"];
     temp_four_max = json["list"][0]["main"]["temp_max"];
     temp_four_min = json["list"][0]["main"]["temp_min"];
-    des_four = json["list"][0]["weather"][0]["description"];
+    des_four = json["list"][0]["weather"][0]["main"];
     //1
 
     temp_1 = json["list"][1]["main"]["temp"];
     temp_four_max_1 = json["list"][1]["main"]["temp_max"];
     temp_four_min_1 = json["list"][1]["main"]["temp_min"];
-    des_four_1 = json["list"][1]["weather"][0]["description"];
+    des_four_1 = json["list"][1]["weather"][0]["main"];
 
     //2
     temp_2 = json["list"][2]["main"]["temp"];
     temp_four_max_2 = json["list"][2]["main"]["temp_max"];
     temp_four_min_2 = json["list"][2]["main"]["temp_min"];
-    des_four_2 = json["list"][2]["weather"][0]["description"];
+    des_four_2 = json["list"][2]["weather"][0]["main"];
     //3
     temp_3 = json["list"][3]["main"]["temp"];
     temp_four_max_3 = json["list"][3]["main"]["temp_max"];
     temp_four_min_3 = json["list"][3]["main"]["temp_min"];
-    des_four_3 = json["list"][3]["weather"][0]["description"];
+    des_four_3 = json["list"][3]["weather"][0]["main"];
   }
 }
